@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+form{
+    width: 30rem;
+    background-color: rgb(255, 135, 181);
+    margin: 3rem auto;
+    justify-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+input,textarea{
+    display: block; 
+    width: 97%;  
+    padding: 0.5rem .5rem;
+    margin-bottom: .5rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+button{
+    display: block;
+    background-color: rebeccapurple;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus{
+    background-color: rgb(168, 90, 120);
+}
+
+textarea:focus{
+    background-color: rgb(168, 90, 120);
+}
+
+.list-option{
+    list-style-type: none;
+}
+.list-option li{
+    display: flex;
+    
+}
+.list-option input{
+    width: auto;
+    margin: 0.5rem;
+}

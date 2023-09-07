@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+#spring{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(224, 172, 255);
+}
+
+#spring img{
+    width: 100%;
+}
+
+.description{
+    display: flex;
+}
+
+.description ul{
+    list-style-type: none;
+}
+

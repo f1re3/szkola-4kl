@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form1.css">
+    <title>formularz 1</title>
+</head>
+<body>
+    <form action="form1.html" method="get">
+        <label for="username">your name</label>
+        <input type="text" id="username" name="name">
+        <label for="usermessage">your message</label>
+        <textarea name="message" id="usermessage" cols="64" rows="2"></textarea>
+        <label for="useremailadress">your email adress</label>
+        <input type="email" name="email" id="useremailadress">
+        <label for="userage">your age</label>
+        <input type="number" name="age" id="userage">
+        <label for="userpassword">your password</label>   
+        <input type="password" name="passwd" id="userpassword">
+        <label for="userbirthdate">your birthdate</label>
+        <input type="date" name="date" id="userbirthdate">
+        <hr>
+        <h2>jak mamy zweryfikowac twoje konto</h2>
+        <input type="radio" name="verify" id="verifysms" class="verifys"> 
+        <label for="verifysms">SMS</label>
+        <input type="radio" name="verify" id="verifyphone" class="verifyp"> 
+        <label for="verifyphone">phone number</label>
+        <input type="radio" name="verify" id="verifyemail" class="verifye"> 
+        <label for="verifyemail">email</label>
+        <button>sumbit</button>
+    </form>
+</body>
+</html>
