@@ -22,12 +22,32 @@ calculateSupply(12, 2);
 
 //4
 function calcCircumfrence(radius){
-    console.log(`The circumference is ${radius*3.14}`);
+    console.log(`The circumference is ${2*radius*3.14}`);
 }
 
 function calcArea(radius){
-    console.log(`The area is ${radius}`);
+    console.log(`The area is ${radius*radius*3.14}`);
 }
 
 calcCircumfrence(5);
 calcArea(5);
+
+//5
+function celsiusToFahrenheit(C){
+    console.log(`${C}°C is ${C*33.8}°F`);
+}
+
+function fahrenheitToCelsiu(F){
+    console.log(`${F}°F is ${F/33.8}°C`);
+}
+
+celsiusToFahrenheit(5);
+fahrenheitToCelsiu(158);
+
+//6
+function reverseNum(number){
+    return number - number*2;
+}
+
+console.log(reverseNum(125));
+console.log(reverseNum(265));
