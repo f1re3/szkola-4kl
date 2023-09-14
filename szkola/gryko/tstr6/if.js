@@ -96,3 +96,32 @@ function paymin(a,b,c){
 
 console.log(pay(147,33,526));
 console.log(pay(33,72,74));
+
+//7
+function iftriangle(x,y,z){
+    if(x>y,z){
+        if(x<y+z)
+            return true;
+        else
+            return false;
+    }
+    else{
+        if(y>x,z){
+            if(y<x+z)
+                return true;
+            else
+                return false;
+        }
+        else{
+            if(z>x,y){
+                if(z<x+y)
+                    return true;
+                else
+                    return false;
+            }
+        }
+    } 
+}
+
+console.log(iftriangle(2,3,4));
+console.log(iftriangle(4,3,8));
