@@ -1,0 +1,17 @@
+//1
+jeden ksiezyc krazy wokol JEDNEJ planety
+planeta moze miec WIELE ksiezycow
+jeden do wielu
+do tabeli ksiezyce wstawiamy klucz podstawowy z tabeli planety idplaneta 
+
+//2
+jedna planeta moze krazyc wokol WIELU gwiazd 
+gwiazda moze miec WIELE planet 
+wiele do wielu
+tworzymy nowa tabele z kluczami podstawowymi z obu tabel 
+
+//3
+jeden kontynent ma WIELE panstw
+ponstwo moze lezec na WIELU kontynentach
+wiele do wielu
+
