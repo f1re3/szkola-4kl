@@ -1,2 +1,2 @@
-print ("chuj")
-
+print(True > False)
+print(True < False)
