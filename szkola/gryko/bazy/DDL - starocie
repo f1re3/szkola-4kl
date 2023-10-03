@@ -35,5 +35,9 @@ MODIFY rok date FIRST;
 
 
 6. Zmień nazwę kolumny koszt na cena, precyzja 7 znaków, dwa miejsca po przecinku
+ALTER TABLE samochody
+CHANGE koszt cena float(10,7);
  
 7. usuń kolumnę rok
+ALTER TABLE samochody
+DROP rok;
