@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oceny</title>
+</head>
+<body>
+    <script>
+        var wiai1 = Number(prompt("podaj 1 ocene z wiai: "))
+        var wiai2 = Number(prompt("podaj 2 ocene z wiai: "))
+        var wiai3 = Number(prompt("podaj 3 ocene z wiai: "))
+        var tsiai1 = Number(prompt("podaj 1 ocene z tsiai: "))
+        var tsiai2 = Number(prompt("podaj 2 ocene z tsiai: "))
+        var tsiai3 = Number(prompt("podaj 3 ocene z tsiai: "))
+        var bd1 = Number(prompt("podaj 1 ocene z bb: "))
+        var bd2 = Number(prompt("podaj 2 ocene z bb: "))
+        var bd3 = Number(prompt("podaj 3 ocene z bb: "))
+        var tizbd1 = Number(prompt("podaj 1 ocene z tizbd: "))
+        var tizbd2 = Number(prompt("podaj 2 ocene z tizbd: "))
+        var tizbd3 = Number(prompt("podaj 3 ocene z tizbd: "))
+
+        var x = (wiai1+wiai2+wiai3)/3
+        var y = (tsiai1+tsiai2+tsiai3)/3
+        var z = (bd1+bd2+bd3)/3
+        var q = (tizbd1+tizbd2+tizbd3)/3
+
+        document.write(`oceny z wiai to: ${wiai1}, ${wiai2}, ${wiai3}. srednia z tych ocen to ${x}<br>`)
+        document.write(`oceny z tsiai to: ${tsiai1}, ${tsiai2}, ${tsiai3} srednia z tych ocen to ${y}<br>`)
+        document.write(`oceny z bd to: ${bd1}, ${bd2}, ${bd3} srednia z tych ocen to ${z}<br>`)
+        document.write(`oceny z tzibd to: ${tizbd1}, ${tizbd2}, ${tizbd3} srednia z tych ocen to ${q}<br>`)
+
+        document.write("srednia z wiai jest wieksza niz 3,5"+(x>3.5)+"<br>")
+        document.write("srednia z tsiai jest wieksza niz 3,5"+(y>3.5)+"<br>")
+        document.write("srednia z bd jest wieksza niz 3,5"+(z>3.5)+"<br>")
+        document.write("srednia z tizbd jest wieksza niz 3,5"+(q>3.5)+"<br>")
+
+        var a = (x+z+y+q)/4
+
+        document.write("srednia wszystkich ocen jest wieksza niz 4,75"+(a>4.75)+"<br>")
+    </script>
+</body>
+</html>
