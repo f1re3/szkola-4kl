@@ -30,5 +30,36 @@ let im=imie[0]
 imie.forEach((el) =>{
     if(el<im)
         console.log(el)
-    console.log(im)
+    else
+        console.log(im)
+})
+
+//a
+var nazwisko = [1,2,3,4534,5,6,7,8,9,52]
+
+let iloczyn = 1
+nazwisko.forEach((el) =>{
+    iloczyn *= el
+    console.log(iloczyn)
+})
+
+//b
+function calcmax(table){
+    let naz = nazwisko[0]
+    table.forEach((el) =>{
+        if(naz<el)
+            naz=el
+    })
+    return naz
+}
+
+console.log(calcmax(nazwisko))
+
+//4
+nazwisko.forEach((el, i, tab) =>{
+    tab = nazwisko
+    // for(i=0, i>10, i++){
+    //     el=nazwisko[i]-1
+    //     console.log(el)
+    // }
 })
