@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funkcje zadanie</title>
+</head>
+<body>
+    <script>
+        //1
+        var a=Number(prompt("podaj pierwsza liczbe: "))
+        var b=Number(prompt("podaj druga liczbe: "))
+        var c=Number(prompt("podaj trzecia liczbe: "))
+        var d=Number(prompt("podaj czwarta liczbe: "))
+        var tab = [a,b,c,d]
+        document.write(tab.sort()+"<br>")
+
+        
+        //2
+        var m = prompt("podaj liczbe od 1 do 12: ")
+        document.write("podano "+m+"<br>")
+        switch(m){
+            case '1': document.write("styczen <br>")
+                break
+            case '2': document.write("luty <br>")
+                break
+            case '3': document.write("marzec <br>")
+                break
+            case '4': document.write("kwiecien <br>")
+                break
+            case '5': document.write("maj <br>")
+                break
+            case '6': document.write("czerwiec <br>")
+                break
+            case '7': document.write("lipiec <br>")
+                break
+            case '8': document.write("sierpien <br>")
+                break
+            case '9': document.write("wrzesien <br>")
+                break
+            case '10': document.write("pazdziernik <br>")
+                break
+            case '11': document.write("listopad <br>")
+                break
+            case '12': document.write("grudzien <br>")
+                break
+
+        }
+        //3
+        var kwota=prompt("podaj kwote: ")
+        var p=prompt("podaj w czym ma byc kwota: ")
+        document.write("podano "+kwota+"zl na "+p+"<br>")
+        switch(p){
+            case 'dolar': document.write("kwota to: "+kwota*4.28+"dolar/y/ow <br>")
+                break
+            case 'funt': document.write("kwota to: "+kwota*5.22+"funt/y/ow <br>")
+                break
+            case 'euro': document.write("kwota to: "+kwota*4.51+"euro <br>")
+                break
+        }
+
+        //4
+        var x=Number(prompt("podaj liczbe x: "))
+        document.write("podano "+x+"<br>")
+        if(x>20)
+            document.write(true)
+        else
+            document.write(false)
+    </script>
+</body>
+</html>

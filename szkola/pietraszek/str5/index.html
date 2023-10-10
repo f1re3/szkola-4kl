@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instrukcje warunkowe i sterujace</title>
+</head>
+<body>
+    <h1>instrucke warunkowe</h1>
+    <script>
+        var a=Number(prompt("podaj liczbe: "))
+        document.write("podana liczba: "+a+"<br>")
+
+        //1
+        if(a%2==0)
+            document.write("liczba "+a+" jest parzysta <br>")
+        else
+            document.write("liczba "+a+" jest nieparzysta <br>")
+
+        //2
+        if(a>0)
+            document.write("liczba "+a+" jest dodatnia <br>")
+        else if(a<0)
+            document.write("liczba "+a+" jest ujemna <br>")
+        else
+            document.write("liczba "+a+" jest rowna 0 <br>")
+
+        //3
+        var b = Number(prompt("podaj druga liczbe: "))
+        var c = Number(prompt("podaj trzecia liczbe: "))
+        document.write("podane liczby: "+b+", "+c+"<br>")
+
+        if(a>b && a>c)
+            document.write("liczba "+a+" jest najwieksza <br>")
+        else if(b>a && b>c)
+            document.write("liczba "+b+"jest nawieksza <br>")
+        else
+            document.write("liczba "+c+" jest najwieksza <br>")
+       
+        //4
+        var d=prompt("podaj liczbe od 1 do 7")
+        switch(d){
+            case "1": document.write("dzis jest poniedzialek <br>")
+                break
+            case "2": document.write("dzis jest wtorek <br>")
+                break
+            case "3": document.write("dzis jest sroda <br>")
+                break
+            case "4": document.write("dzis jest czwartek <br>")
+                break
+            case "5": document.write("dzis jest piatek <br>")
+                break
+            case "6": document.write("dzis jest sobota <br>")
+                break
+            case "7": document.write("dzis jest niedziela <br>")
+                break
+        }
+    </script>
+</body>
+</html>
