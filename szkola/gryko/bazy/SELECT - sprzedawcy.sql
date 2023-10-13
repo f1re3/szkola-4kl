@@ -93,4 +93,3 @@ SELECT *FROM Klienci WHERE Nazwa LIKE '%N';
 
 15. Wyświetl informacje o sprzedawcach, których pierwsza litera nazwiska to 'N', a czwarta to 'l'  (l jak liść)
 SELECT *FROM Sprzedawcy WHERE Nazwisko LIKE 'N__l%';
-llllll;
