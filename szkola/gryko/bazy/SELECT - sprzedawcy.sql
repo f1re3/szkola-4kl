@@ -86,8 +86,11 @@ SELECT *FROM Zamowienia WHERE Wartosc BETWEEN 500 AND 4000;
 SELECT *FROM Zamowienia WHERE Wartosc BETWEEN 500 AND 4000 AND Wartosc NOT IN (948.50,1983.43);
 
 13. Wyświetl informacje o tych klientach, których nazwy zaczynają się na literę 'B'  ( ... LIKE '...%' )
-SELECT *FROM Klienci WHERE Nazwa LIKE ;
+SELECT *FROM Klienci WHERE Nazwa LIKE 'B%';
 
 14. Wyświetl informacje o tych klientach, których nazwy kończą się na literę n
+SELECT *FROM Klienci WHERE Nazwa LIKE '%N';
 
 15. Wyświetl informacje o sprzedawcach, których pierwsza litera nazwiska to 'N', a czwarta to 'l'  (l jak liść)
+SELECT *FROM Sprzedawcy WHERE Nazwisko LIKE 'N__l%';
+llllll;
