@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instrukcje zadania</title>
+</head>
+<body>
+    <script>
+        //1
+        var m=Number(prompt("podaj pierwsza liczbe: "))
+        var t=Number(prompt("podaj druga liczbe: "))
+        var k=prompt("czynnosc jaka chcesz wykonac z tymi liczbami: ")
+        document.write("podane liczby to: "+m+", "+t+"<br>")
+        document.write("czynnosc to: "+k+"<br>")
+        switch(k){
+            case 'dodawanie': document.write(m+t)
+                break
+            case 'odejmowanie': document.write(m-t)
+                break
+            case 'mnozenie': document.write(m*t)
+                break
+            case 'dzielenie': document.write(m/t)
+                break
+        }
+
+        //2
+        var x = Number(prompt("podaj liczbe x: "))
+        var a = Number(prompt("podaj liczbe a: "))
+        var b = Number(prompt("podaj liczbe b: "))
+        var c = Number(prompt("podaj liczbe c: "))
+
+        document.write("<br> podane liczby to: "+x+", "+a+", "+a+", "+c+"<br>")
+
+        document.write("wynik rownania kwadratowegoto: "+(a*x**2+b*x+c)+"<br>")
+
+        var d = (b**2-4*a*c)
+        document.write("delta to: "+d+"<br>")
+        
+        if(d>0)
+            document.write("dwa miejsca zerowe")
+        else if(d==0)
+            document.write("jedno miejsce zerowe")
+        else if(d<0)
+            document.write("nie ma miejsc zerowych")
+    </script>
+</body>
+</html>
