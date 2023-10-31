@@ -1,22 +1,21 @@
-const season1 = document.querySelector('#season1')
-const season2 = document.querySelector('#season2')
-const season3 = document.querySelector('#season3')
-const season4 = document.querySelector('#season4')
+const first = document.getElementById('first')
+const second = document.getElementById('second')
+const btn1 = document.getElementById('btn1')
+const btn2 = document.getElementById('btn2')
+const btn3 = document.getElementById('btn3')
+const btn4 = document.getElementById('btn4')
+const result = document.querySelector('#result')
 
-const imgEl = document.querySelector('img')
-
-season1.addEventListener('click', (event)=>{
-    imgEl.src = 'img/wiosna.jpg'
+btn1.addEventListener('click', (event) =>{
+    result.innerHTML=`${first.value} + ${second.value} = ${Number(first.value)+Number(second.value)}`
+})
+btn2.addEventListener('click', (event) =>{
+    result.innerHTML=`${first.value} - ${second.value} = ${first.value-second.value}`
+})
+btn3.addEventListener('click', (event) =>{
+    result.innerHTML=`${first.value} * ${second.value} = ${first.value*second.value}`
+})
+btn4.addEventListener('click', (event) =>{
+    result.innerHTML=`${first.value} / ${second.value} = ${first.value/second.value}`
 })
 
-season2.addEventListener('click', (event)=>{
-    imgEl.src = 'img/lato.jpg'
-})
-
-season3.addEventListener('click', (event)=>{
-    imgEl.src = 'img/jesien.jpg'
-})
-
-season4.addEventListener('click', (event)=>{
-    imgEl.src = 'img/zima.jpg'
-})

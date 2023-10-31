@@ -1,14 +1,3 @@
-#sections{
+button{
     display: flex;
-}
-
-#section-left{
-    width: 30%;
-    border: 1px black solid;
-    text-align: center;
-}
-
-#section-right{
-    width: 70%;
-    border: 1px black solid;
 }
