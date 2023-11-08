@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function alarmuj(){
+            document.write("to okienko zotalo wywolane z wnetrza funkcji <br>")
+        }
+        alarmuj()
+
+        //2
+        document.write("<br>")
+        function alarmuj2(komunikat){
+            document.write(komunikat+"<br>")
+        }
+
+        alarmuj2("komunikat 1: okienko jest wywolane z wnetrza funkcji ale tekst przekazywany jest z zewnatrz funkcji.")
+        alarmuj2("komunikat 2: to jest kolejne okienko wywolane z tej samej funckcji, ale innym komunikatem!")
+
+        //3
+        document.write("<br>")
+        function srednia(x,y){
+            x=Number(prompt("podaj x: "))
+            y=Number(prompt("podaj y: "))
+            document.write(`srednia wynosi ${(x+y)/2} <br>`)
+        }
+
+        srednia()
+
+        //4
+        document.write("<br>")
+    </script>
+</body>
+</html>
