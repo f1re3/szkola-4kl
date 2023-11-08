@@ -5,5 +5,5 @@ const btnO = document.getElementById("oblicz")
 const result = document.getElementById("result")
 
 btnO.addEventListener('click', (event)=>{
-    if(isNaN(PolakSr) || )
+    // if(isNaN(PolakSr) || )
 })
