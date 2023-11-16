@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./skrypt.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>formularz</title>
 </head>
 <body>
@@ -25,16 +26,16 @@
         <tr>
             <td><label for="usluga">usluga</label></td>
             <td><select name="usluga" id="usluga">
-                <option value="">naprawa komputerowa</option>
-                <option value="">odzyskiwanie danych</option>
-                <option value="">problemy z optogramowaniem</option>
-                <option value="">konfiguracja sieci lan</option>
-                <option value="">inne</option>
+                <option value="naprawa komputerowa">naprawa komputerowa</option>
+                <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                <option value="problemy z optogramowaniem">problemy z optogramowaniem</option>
+                <option value="konfiguracja sieci lan">konfiguracja sieci lan</option>
+                <option value="inne">inne</option>
             </select></td>
         </tr>
         <tr>
             <td></td>
-            <td>    <input type="checkbox" id="wyslij">
+            <td>    <input type="checkbox" id="wyslij" checked>
                 <label for="wyslij">wyslij kopie wiadomosci</label></td>
         </tr>
         <tr>
@@ -43,3 +44,7 @@
                 <button id="send">przeslij</button></td>
         </tr>
     </table>
+
+    <p id="result"></p>
+</body>
+</html>
