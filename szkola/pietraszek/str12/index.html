@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // //1
+        document.write('zadanie1 <br>')
+
+        var a = Number(prompt('podaj wartosc w zlotowkach: '))
+        document.write(`podana wartosc to: ${a}zl <br>`)
+
+        function naInnaWartosc() {
+            document.write(`wartosc podanej liczby w euro to: ${a/4.39}euro <br>`)
+            document.write(`wartosc podanej liczby w funtach to: ${a/5.04}funty/ow <br>`)
+        }
+        naInnaWartosc()
+    </script>
+    <script>
+        //2
+        document.write('<br> zadanie2 <br>')
+
+        var m = Number(prompt('podaj swoja mase w kg:'))
+        var w = Number(prompt('podaj swoj wzrost w cm:'))
+
+        document.write(`podana masa to: ${m} i podany wzrost to: ${w} <br>`)
+
+        var w2 = w/100
+
+        function BMI(){
+            var bmi = m/(w2**2)
+            document.write(`twoje BMI wynosi ${bmi} <br>`)
+
+            if(bmi<18.5)
+                document.write('waga do wzrostu nie jest prawidlowa <br>')
+            else if(bmi>18.5 && bmi<25)
+                document.write('waga do wzrostu jest prawidlowa <br>')
+            else if(bmi>25)
+                document.write('waga do wzrostu jest nie prawidlowa <br>')
+        }
+        BMI()
+    </script>
+    <script>
+        //3
+        document.write('<br> zadanie3 <br>')
+
+        var a = Number(prompt('podaj liczbe:'))
+        document.write(`podana liczba to: ${a} <br>`)
+
+        function czyParzyste(){
+            if(a%2==0){
+                document.write('1 <br>')
+                alert('<<PARZYSTA>>')
+            }
+            else{
+                document.write('-1 <br>')
+                alert('<<NIEPARZYSTA>>')
+            }
+        }
+        czyParzyste()
+    </script>
+</body>
+</html>
