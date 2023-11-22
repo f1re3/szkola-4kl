@@ -1,0 +1,60 @@
+body{
+    color: red;
+}
+
+a{
+    color: red;
+}
+
+header{
+    background-color: black;
+    height: 15%;
+}
+
+#left{
+    background-color: rgb(69, 69, 69);
+    width: 30%;
+    float: left;
+    height: 600px;
+    
+}
+
+#right{
+    background-color: rgb(69, 69, 69);
+    width: 70%;
+    float: right;
+    height: 600px;
+}
+
+#rightK{
+    background-color: grey;
+    width: 70%;
+    float: right;
+    height: 600px;
+    text-align: center;
+}
+
+#baner{
+    height: 130px;
+}
+
+#zdj{
+    height: 500px;
+}
+
+table,tr,td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    font-size: 18px;
+    color: black;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+    width: 10px;
+}
+
+#jeden{
+    font-weight: bold;
+}
