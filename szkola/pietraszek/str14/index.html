@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylizacja Tekstu</title>
+  <style>
+    body {
+      background-color: dimgray;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    //1
+    document.addEventListener('DOMContentLoaded', function() {
+
+      var bodyElement = document.body
+
+      var paragraphElement = document.createElement('p')
+
+      paragraphElement.textContent = 'Cały tekst na stronie będzie w żółtym kolorze'
+
+      bodyElement.appendChild(paragraphElement)
+    })
+  </script>
+
+<script>
+    //2
+    document.addEventListener('DOMContentLoaded', function() {
+
+      var paragraphElement = document.getElementById('currentDate');
+
+      var currentDate = new Date();
+
+      paragraphElement.textContent = 'Bieżąca data: ' + currentDate.toLocaleString();
+    });
+  </script>
+   <p id="currentDate"></p>
+
+   <script>
+    //3
+    var a = 36;
+    var b = 2;
+    var c = -7;
+
+    document.write("Liczba a wynosi: " + a + "<br> Liczba b wynosi: " + b + "<br> Liczba c wynosi: " + c +"<br>");
+
+    document.write("Pierwiastek kwadratowy z liczby " + a + " wynosi: " + Math.sqrt(a)+"<br>");
+    document.write(a + " do potęgi 2 wynosi: " + Math.pow(a, 2)+"<br>");
+
+    if (a > b) {
+    document.write("Spośród liczb " + a + " oraz " + b + " większa jest liczba " + a+"<br>");
+    } else {
+    document.write("Spośród liczb " + a + " oraz " + b + " większa jest liczba " + b+"<br>");
+    }
+
+    document.write("Wartość bezwzględna liczby " + c + " wynosi: " + Math.abs(c)+"<br>");
+    document.write("Logarytm naturalny liczby " + b + " wynosi: " + Math.log(b)+"<br>");
+   </script>
+</body>
+</html>

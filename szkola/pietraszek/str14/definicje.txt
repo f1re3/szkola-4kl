@@ -1,0 +1,59 @@
+1.
+obiekty - takie pojemniki, w których przechowuje się zmienne oraz funkcje, które są ze sobą powiązane
+
+2.
+a.Window
+1. Reprezentuje okno przeglądarki. Jest to globalny obiekt w srodowisku przegladarki
+2. Składnia `window`
+3. Własciwosci Np. window.innerWidth  lub window.location
+4. Metody  window.alert(), window.open()
+
+b.Navigator
+1. Reprezentuje informacje o przeglądarce użytkownika
+2. Składnia `window.navigator`
+3. Własciwosci  `navigator.userAgent`, `navigator.languag`
+4.Metody moze zawierac metody zwiazane z nawigacja np `navigator.geolocation.getCurrentPosition()`
+
+c. Document
+1. Reprezentuje dokument HTML w bieżącej sesji przegladarki
+2. Składnia `document` 
+3. Własciwosci dostep do elementów dokumentu np document.getElementById()
+4.Metody manipulacja zawartoscia dokumentu np document.createElement() lub document.querySelector()
+
+d.Location
+1.Reprezentuje aktualny adres URL
+2. Składnia `window.location`
+3. Własciwosci `location.href`, `location.hostname`
+4. Metody Modyfikacje adresu URL, np. `location.assign()`, `location.reload()`.
+
+e.History
+1.Opis Reprezentuje historię sesji przeglądarki.
+2.Składnia window.history
+3.Właściwości history.length, history.state, itp.
+4.Metody history.back(), history.forward(), history.go().
+
+f.String
+1.Opis Reprezentuje ciągi znaków.
+2.Składnia "Tekst"
+3.Właściwości length
+4.Metody Metody manipulacji tekstem, np. toUpperCase(), substring()
+
+g.Date
+1.Opis Reprezentuje datę i czas.
+2.Składnia new Date()
+3.Właściwości getDate(), getMonth(), itp.
+4.Metody Różne metody manipulacji datą i czasem.
+
+h. Math
+1.Opis Zawiera matematyczne funkcje i stałe.
+2.Składnia Math
+3.Właściwości Stałe, np. Math.PI
+4.Metody Matematyczne operacje, np. Math.sqrt(), Math.random().
+
+i.ARRAY
+1.Opis Reprezentuje tablicę, czyli uporządkowany zbiór elementów.
+2.Składnia let arr = [element1, element2, ...]
+3.Właściwości length
+4.Metody Metody manipulacji tablicą, np. push(), pop(), forEach().
+
+
