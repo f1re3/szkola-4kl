@@ -1,0 +1,23 @@
+header{
+    background-color: rgb(143, 100, 196);
+}
+
+section{
+    display: flex;
+}
+
+#left{
+    background-color: rgb(143, 100, 196);
+}
+
+#top{
+    background-color: rgb(166, 142, 71);
+}
+
+#bottom{
+    background-color: rgb(110, 94, 47);
+}
+
+footer{
+    background-color: rgb(143, 100, 196);
+}
