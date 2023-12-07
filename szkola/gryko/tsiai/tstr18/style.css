@@ -1,23 +1,59 @@
-header{
-    background-color: rgb(143, 100, 196);
+*{
+    margin: 0;
 }
 
-section{
+header{
+    background-color: #9692B1;
+    text-align: center;
+    height: 80px;
+}
+
+main{
     display: flex;
 }
 
 #left{
-    background-color: rgb(143, 100, 196);
+    background-color: #9692B1;
+    color: white;
+    width: 20%;
+    height: 750px;
+}
+
+#right{
+    width: 80%;
 }
 
 #top{
-    background-color: rgb(166, 142, 71);
+    background-color: #FFF4CC;
+    height: 300px;
+    text-align: center;
+}
+
+#top img{
+    width: 15%;
+    margin: 20px;
 }
 
 #bottom{
-    background-color: rgb(110, 94, 47);
+    background-color: #DBCC93;
+    height: 450px;
+    text-align: center;
+}
+
+#bottom img{
+    border: solid 4px #9692B1;
+}
+
+#bottom img:hover{
+    border: solid 4px grey;
 }
 
 footer{
-    background-color: rgb(143, 100, 196);
+    background-color: #9692B1;
+    color: white;
+    text-align: center;
+}
+
+ul,a{
+    color: white;
 }
