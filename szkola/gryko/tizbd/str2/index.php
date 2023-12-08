@@ -49,11 +49,63 @@
 // Wyświetlenie raportów
 
 // 7 Wyświetl wynik działania kwerendy a. w postaci listy numerowanej
+$conn = new mysqli('localhost','root','','4e_2_raporty_e14');
 
+$sql = "SELECT tytul FROM filmy WHERE gatunek='SF'";
+$result = $conn -> query($sql);
+
+echo "<ol>";
+while ($row = $result -> fetch_assoc()) {
+    $tytul = $row['tytul'];
+    echo "<li> $tytul </li>";
+}
+echo "</ol>";
+
+$conn -> close();
 
 // 8. Wyświetl wynik działania kwerendy b. w postaci listy wypunktowanej, tytuł powinien być pogrubiony
+$conn = new mysqli('localhost', 'root', '','4e_2_raporty_e14');
+
+$sql = 'SELECT tytul, nazwisko FROM filmy INNER JOIN rezyserzy ON filmy.rezyserid=rezyserzy.idrezyser;';
+$result = $conn -> query($sql);
+
+echo '<ul>';
+while ($row = $result -> fetch_assoc()) {
+    $tytul = $row['tytul'];
+    $nazwisko = $row['nazwisko'];
+    echo "<li> $tytul $nazwisko </li>";
+}
+echo '</ul>';
+
+$conn -> close( );
 
 // 9. Wyświetl wynik działania kwerendy c. w postaci tabeli, każde pole w osobnej komórce
+$conn = new mysqli('localhost', 'root','','4e_2_raporty_e14');
+
+$sql = "SELECT idfilm, tytul, gatunek, rezyserid, recenzjaid, link FROM filmy INNER JOIN recenzje ON filmy.recenzjaid=recenzje.idrecenzja WHERE ocena='4';";
+$result = $conn -> query($sql);
+
+echo '<table>';
+while ($row = $result -> fetch_assoc()){
+    $film = $row['idfilm'];
+    $tytul = $row['tytul'];
+    $gatunek = $row['gatunek'];
+    $rezyser = $row['rezyserid'];
+    $ocena = $row['recenzjaid'];
+    $link = $row['link'];
+    echo '<tr>';
+    echo "<td> $film </td>";
+    echo "<td> $tytul </td>";
+    echo "<td> $gatunek </td>";
+    echo "<td> $rezyser </td>";
+    echo "<td> $ocena </td>";
+    echo "<td> $link </td>";
+    echo '</tr>';
+}
+echo '</table>';
+
+$conn -> close();
+
 ?>
 </body>
 </html>
