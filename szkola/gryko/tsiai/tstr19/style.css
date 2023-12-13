@@ -1,0 +1,41 @@
+body{
+    font-family: Helvetica;
+}
+
+header{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+
+footer{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+
+main{
+    background-color: rgb(176, 196, 222);
+    margin: 50px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+}
+
+#left{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+}
+
+#right{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+}
