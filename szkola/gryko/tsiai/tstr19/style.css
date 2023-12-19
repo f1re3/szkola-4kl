@@ -18,7 +18,6 @@ footer{
 
 main{
     background-color: rgb(176, 196, 222);
-    margin: 50px;
     text-align: center;
 }
 
@@ -31,6 +30,14 @@ section{
     color: white;
     height: 300px;
     width: 80%;
+}
+
+#left img{
+    height: 40%;
+}
+
+#left img:hover{
+    border: 1px solid white;
 }
 
 #right{
