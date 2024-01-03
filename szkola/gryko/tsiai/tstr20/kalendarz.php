@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="styl5.css">
 </head>
 <body>
-    
-
-
+    <header>
+        <section id="left"></section>
+        <section id="right"></section>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
