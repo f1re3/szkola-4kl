@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Działania matematyczne</title>
     <link rel="stylesheet" href="styl.css">
+    <script src="./skrypt.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,9 +33,21 @@
             </ul>
         </section>
         <section id="left">
-            <p>Autor: PESEL</p>
+            <h3>Proste działania</h3>
+            <label for="numberA">Liczba A:</label>
+            <input id="numberA" type="text"><br>
+            <label for="numberB">Liczba B:</label>
+            <input id="numberB" type="text"><br>
+            <button id="dod">+</button>
+            <button id="odej">-</button>
+            <button id="ilo">*</button>
+            <button id="rozn">/</button>
+            <button id="pot">A^B</button>
+            <p id="wynik"></p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Autor: PESEL</p>
+    </footer>
 </body>
 </html>
