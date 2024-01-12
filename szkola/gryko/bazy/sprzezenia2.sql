@@ -10,4 +10,8 @@ WHERE Data_wyp is NULL;
  
 
 A. Odszukaj wiersze, które naruszają więzy integralności (tzn.w tabeli Wizyty występuje ID_pacjenta, którego nie ma w tabeli Pacjenci)
-B. Być może w bazie brakuje pacjenta pacjenta Antoniego Mizerskiego (ubezpieczony), którego ktoś omyłkowo usunął z tabeli Pacjenci. Niestety nikt nie pamięta jaki miał identyfikator. Jeśli go odszukasz (przygotuj kwerendę), to dopisz Antoniego do tabeli Pacjenci.
+SELECT wizyty.ID_pacjenta, pacjenci.imie
+FROM pacjenci
+    RIGHT JOIN wizyty ON Pacjenci.id_pacjenta = wizyty.id_pacjenta
+WHERE pacjenci.id_pacjenta is NULL;
+
