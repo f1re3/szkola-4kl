@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const wyr1 = /[0-9]{3}/i
+        console.log(wyr1.test("as123dgfdgsdgrtbs")) //true
+        console.log(wyr1.test("ljk5657")) //true
+        console.log(wyr1.test("ni46n56jhn5")) //false
+    </script>
+    <script>
+        const wyr2 = /^[0-9]{3}$/
+        console.log(wyr2.test("123dgfdgsdgr654")) //true
+        console.log(wyr2.test("ljk56fa")) //false
+        console.log(wyr2.test("342")) //false
+        console.log(wyr2.test("7653")) //false
+    </script>
+</body>
+</html>
