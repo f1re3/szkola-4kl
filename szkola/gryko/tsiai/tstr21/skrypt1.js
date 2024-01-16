@@ -70,14 +70,32 @@ console.log(wyr9.test("0192")) //false
 
 // 10. we wzorcu musi być kropka
 console.log('10')
-const wyr10 = /[/]/
+const wyr10 = /[.]/
 console.log(wyr10.test("967.89789/798467")) //true
 console.log(wyr10.test("zg/dsfz5.34534534")) //true
 console.log(wyr10.test("Ab63456356Df")) //false
 console.log(wyr10.test("0192")) //false
 
 // 11. we wzorcu musi być na końcu kropka i od 2 do 3 liter od a do z (duże też pasują)
+console.log('11')
+const wyr11 = /\.[a-z]{2,3}$/i
+console.log(wyr11.test(".PL")) //true
+console.log(wyr11.test(".Com")) //true
+console.log(wyr11.test(".a")) //false
+console.log(wyr11.test(".cOM2")) //false
 
 // 12. adres e-mail znaki(litera, cyfra,_.-), małpa, znaki alfanumeryczne razem z _ kroka i od 2 do 3 znaków (liter bez _)
+console.log('12')
+const wyr12 = /^\w+@\w+\.[a-z0-9]{2,3}$/i
+console.log(wyr12.test("dsa@dsa.P__L")) //false
+console.log(wyr12.test("lfksdj@__Dsa.dsa")) //true
+console.log(wyr12.test("gsd_g@bcv.a")) //false
+console.log(wyr12.test("dasd@fsfds.cz")) //true
 
 // 13. imię i nazwisko (co najmniej dwie litery, biały znak, co najmniej dwie litery). I dlaczego to nie jest takie proste?
+console.log('13')
+const wyr13 = /^[a-z]{2,}\s[a-z]{2,}$/i
+console.log(wyr13.test("Daniel Sobiech")) //true
+console.log(wyr13.test("Dorian Jan Sledzik")) //false
+console.log(wyr13.test("MA Konicki")) //true
+console.log(wyr13.test("Blazej")) //false
