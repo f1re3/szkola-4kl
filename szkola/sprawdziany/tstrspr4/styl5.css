@@ -1,0 +1,50 @@
+*{
+    margin: auto;
+}
+
+header{
+    background-color: #1C59A7;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+main{
+    display: flex;
+}
+
+#left{
+    background-color: #3A70B5;
+    width: 33%;
+    height: 200px;
+}
+
+#middle{
+    background-color: #5A8AC8;
+    width: 33%;
+    height: 200px;
+}
+
+#right{
+    background-color: #86ACDD;
+    text-align: center;
+    width: 34%;
+    height: 200px;
+}
+
+#right a{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+
+section{
+    background-color: #86ACDD;
+    text-align: center;
+    height: 300px;
+}
+
+footer{
+    background-color: #1C59A7;
+    color: white;
+}
