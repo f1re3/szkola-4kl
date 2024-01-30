@@ -1,0 +1,56 @@
+*{
+    margin: auto;
+}
+
+aside{
+    display: block;
+    background-color: rgb(92, 92, 92);
+    float: left;
+    width: 30%;
+    height: 100vh;
+}
+
+#top{
+    height: 33vh;
+    background-color: rgb(127, 255, 212);
+    margin: 5px;
+}
+
+#middle{
+    height: 33vh;
+    background-color: rgb(127, 225, 200);
+    margin: 5px;
+}
+
+#bottom{
+    height: 34vh;
+    background-color: rgb(127, 200, 175);
+    margin: 5px;
+}
+
+main{
+    width: 70%;
+    height: 100vh;
+    float: right;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    margin: 15px;
+    padding: 15px;
+    background-color: bisque;
+    color:blueviolet;
+    text-align: center;
+    display: inline-block;
+}
+
+button:hover{
+    background-color: burlywood;
+}
+
+img{
+    height: 20vh;
+    margin: 50x;
+}

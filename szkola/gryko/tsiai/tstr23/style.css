@@ -1,0 +1,26 @@
+section{
+    width: 30%;
+    float: left;
+}
+
+#top{
+    height: 123vh;
+}
+
+/* #bottom{
+
+} */
+
+main{
+    width: 70%;
+    float: right;
+    display: flex;
+}
+
+/* #left{
+
+}
+
+#right{
+
+} */
