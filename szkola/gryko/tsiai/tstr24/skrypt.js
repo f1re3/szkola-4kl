@@ -8,8 +8,12 @@ const imglist = [
 ]
 
 const btnT = document.querySelector('#top button')
-const btnM = document.querySelector('#middle button')
+const btnM = document.getElementById('first')
+const btnB = document.getElementById('last')
+const btnS = document.getElementById('send')
+const btnR = document.getElementById('remove')
 const mainE = document.querySelector('main')
+const input = document.querySelector('input')
 
 btnT.addEventListener('click', (event)=>{
     for(let i in imglist){
@@ -25,5 +29,24 @@ btnT.addEventListener('click', (event)=>{
 })
 
 btnM.addEventListener('click', (event)=>{
+        mainE.removeChild(mainE.firstChild)
+    })
+
+btnB.addEventListener('click', (event)=>{
+        mainE.removeChild(mainE.lastChild)
+    })
+
+btnS.addEventListener('click', (event)=>{
+    let divE = document.createElement('div')
+    let h2E = document.createElement('h2')
+    h2E.innerHTML='nowy'
+    divE.appendChild(h2E)
+    let imgE2 = document.createElement('img')
+    imgE2.src=input.value
+    divE.appendChild(imgE2)
+    mainE.appendChild(divE)
+})
+
+btnR.addEventListener('click', (event)=>{
     
 })
