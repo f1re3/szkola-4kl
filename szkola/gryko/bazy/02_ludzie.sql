@@ -55,9 +55,14 @@ ADD constraint fk_Uslugi foreign KEY
 (ID_Uslugi) references Uslugi(ID);
 
 5. Wprowadź dane dwóch klientów i dwie usługi
-INSERT INTO Klienci(Imie, Nazwisko, email)
+INSERT INTO Klienci(imie,nazwisko,email )
 VALUES
-    ();
+    ('Wojtek','PANDA','panda.wuj@gmail.com'),
+    ('Tomek','BUY','pandaBuy@gmeil.com');
+INSERT INTO Uslugi(nazwa, cena)
+VALUES
+    ('sprzatanie', 2137),
+    ('remont',18);
 
 6. Upewnij się, że działają więzy integralności (nie puste, wartości się nie powtarzają, check)
 A. w tabeli Klienci
@@ -68,17 +73,29 @@ B. w tabeli Uslugi
 
 7. Zamów i wyprowadź do bazy danych wykonanie usług: 
 A. pierwszy klient zamawia pierwszą usługę, przy wprowadzaniu danych posługuj się nazwami usług
-
+INSERT INTO Kluczem(ID_Klienci, ID_Uslugi)
+VALUES
+    (1, (SELECT id FROM Uslugi WHERE nazwa='sprzatanie'));
 
 B. Drugi klient zamawia obie usługi, przy wprowadzaniu danych posługuj się nazwami usług
-
+INSERT INTO Kluczem(ID_Klienci, ID_Uslugi)
+VALUES
+    (2, (SELECT id FROM Uslugi WHERE nazwa='sprzatanie')),
+    (2, (SELECT id FROM Uslugi WHERE nazwa='remont'));
 
 8. Upewnij się, że działają więzy integralności referencyjnej
 A. usuń dane pierwszego klienta z tabeli klienci,
-
+DELETE FROM klienci
+WHERE ID=1;
 
  B. z tabeli klienci usuń dane pierwszego klienta stosując podejście wyważone
-
+UPDATE Kluczem
+SET ID_Klienci=NULL
+WHERE ID_Klienci=1;
 
 C. z tabeli klienci usuń dane drugiego klienta stosując podejście kaskadowe usuwanie powiązanych pól
+DELETE FROM Kluczem
+WHERE ID_Klienci=2;
 
+DELETE FROM Klienci
+WHERE ID = 2;

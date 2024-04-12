@@ -21,17 +21,18 @@ SELECT DATEDIFF('2024-06-21', CURDATE());
 
 DATE_ADD(data, INTERVAL n przedział_czasu) przedział_czasu to DAY, WEEK, MONTH, YEAR, n - ilość 
 6. Wyświetl dowolną datę, oraz datę dzień później, tydzień, miesiąc i rok
-SELECT CURDATE(), DATE_ADD(CURDATE, INTERVAL 1 DAY);
+SELECT CURDATE(), DATE_ADD(CURDATE(), INTERVAL 1 DAY) AS DZIENPOZNIEJ, DATE_ADD(CURDATE(), INTERVAL 1 WEEK) AS TYDZIEN, DATE_ADD(CURDATE(), INTERVAL 1 MONTH) AS MIESIAC, DATE_ADD(CURDATE(), INTERVAL -1 YEAR) AS ROK;
 
 DATE_SUB(data, INTERVAL n przedział_czasu) przedział_czasu to DAY, WEEK, MONTH, YEAR, n - ilość 
 7. Wyświetl dowolną datę, oraz datę dzień wcześniej, tydzień, miesiąc i rok
-
+SELECT CURDATE(), DATE_SUB(CURDATE(), INTERVAL 1 DAY) AS Dzienwczesniej, DATE_SUB(CURDATE(), INTERVAL 1 MONTH) AS miesiacwczesniej;
 
 DAY(data) MONTH(data) QUARTER(data) YEAR(data) - wyciągają z daty dzień, miesiąc, kwartał i rok
 
 
 8. wyciągnij z dowolnej daty dzień, miesiac, kwartał, rok
-
+SELECT CURDATE() AS aktualnadata, DAY(CURDATE()) AS DZIEN, MONTH(CURDATE()) AS MIESIAC, QUARTER(CURDATE()) AS kwartal, YEAR(CURDATE()) AS ROK;
 
 WEEKDAY(data) wyświetla numer dnia tygodnia
 9. wyświetl numer aktualnego dnia tygodnia, czy tydzień zaczyna się od poniedziałku czy niedzieli?
+SELECT CURDATE() AS AKTUALNADATA, WEEKDAY(CURDATE()) AS NUMERDNIA;
