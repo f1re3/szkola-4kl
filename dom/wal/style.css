@@ -1,0 +1,101 @@
+*{
+    margin: auto;
+}
+
+header{
+    display: flex;
+    background-color: rgb(121, 40, 138);
+}
+
+#hLeft img, #hMid, #hRight img{
+    height: 200px;
+}
+
+#hLeft, #hRight{
+    width: 30%;
+    text-align: center;
+}
+
+#hMid{
+    text-align: center;
+    background-color: rgb(147, 67, 163);
+    width: 750px;
+    height: 203px;
+}
+
+h1{
+    padding: 75px;
+}
+
+section{
+    display: flex;
+}
+
+#sLeft{
+    width: 30%;
+    float: left;
+    height: 500px;
+    background-color: rgb(121, 40, 138);
+    text-align: center;
+}
+
+#leftH3{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#sLeft label{
+    color: white;
+    size: 5px;
+}
+
+#sLeft input{
+    background-color: rgb(147, 67, 163);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+#zobacz{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#zobacz:hover{
+    background-color: rgb(165, 0, 0);
+}
+
+#zobacz:active{
+    background-color: rgb(122, 0, 0);
+}
+
+main{
+    width: 70%;
+    float: right;
+    height: 500px;
+    background-color: rgb(147, 67, 163);
+}
+
+main div{
+    margin: 20px;
+    background-color: rgb(121, 40, 138);
+}
+
+main button:hover{
+    background-color: rgb(165, 0, 0);
+}
+
+main button:active{
+    background-color: rgb(122, 0, 0);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(121, 40, 138);
+    color: white;
+}
