@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteka publiczna</title>
+</head>
+<body>
+    <header><h1>Biblioteka w Książkowicach Wielkich</h1></header>
+    <main>
+        <section id="left">
+            <h3>Polecamy dzieła autorów:</h3>
+            <ol>
+                <?php
+                ?>
+            </ol>
+        </section>
+        <section id="mid">
+            <h3>ul. Czytelnicza 25, Książkowice Wielkie</h3>
+            <p><a href="sekretariat@biblioteka.pl"></a>Napisz do nas</p>
+            <img src="biblioteka.png" alt="ksiazko">
+        </section>
+        <section id="right">
+            <section id="top">
+                <h3>Dodaj czytelnika</h3>
+                <form action="" method="post">
+                    <label for="name">imię:</label><input type="text" id="name">
+                    <label for="surname">nazwisko::</label><input type="text" id="surname">
+                    <label for="symbol">symbol:</label><input type="number" id="symbol">
+                    <button>DODAJ</button>
+                </form>
+            </section>
+            <section id="bottom">
+                <?php
+                ?>
+            </section>
+        </section>
+    </main>
+    <footer><p>Projekt strony: 000000000000000</p></footer>
+</body>
+</html>
